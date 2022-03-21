@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultScreen">
+
+    <TextView
+        android:id="@+id/YourGuesses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/guessText2"
+        android:textAppearance="@style/BorderEffect"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rLetter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="@string/r"
+        android:textAppearance="@style/BorderEffect"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rText2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rText2" />
+
+    <TextView
+        android:id="@+id/gLetter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/g"
+        android:textAppearance="@style/BorderEffect"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rLetter2" />
+
+    <TextView
+        android:id="@+id/bLetter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/b"
+        android:textAppearance="@style/BorderEffect"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gLetter2" />
+
+    <TextView
+        android:id="@+id/rText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/White"
+        android:ems="10"
+        android:gravity="center"
+        android:maxLength="3"
+        android:textColor="@color/Black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/rActual"
+        app:layout_constraintStart_toEndOf="@+id/rLetter2"
+        app:layout_constraintTop_toBottomOf="@+id/YourGuesses" />
+
+    <TextView
+        android:id="@+id/gText2"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/White"
+        android:ems="10"
+        android:gravity="center"
+        android:maxLength="3"
+        android:textColor="@color/Black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gLetter2"
+        app:layout_constraintEnd_toStartOf="@+id/gActual"
+        app:layout_constraintStart_toEndOf="@+id/gLetter2"
+        app:layout_constraintTop_toTopOf="@+id/gLetter2" />
+
+    <TextView
+        android:id="@+id/bText2"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/White"
+        android:ems="10"
+        android:gravity="center"
+        android:maxLength="3"
+        android:textColor="@color/Black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bLetter2"
+        app:layout_constraintEnd_toStartOf="@+id/bActual"
+        app:layout_constraintStart_toEndOf="@+id/bLetter2"
+        app:layout_constraintTop_toTopOf="@+id/bLetter2" />
+
+    <TextView
+        android:id="@+id/rActual"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:maxLength="3"
+        android:textAppearance="@style/BorderEffect"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rLetter2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rLetter2" />
+
+    <TextView
+        android:id="@+id/gActual"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:maxLength="3"
+        android:textAppearance="@style/BorderEffect"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gText2" />
+
+    <TextView
+        android:id="@+id/bActual"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:maxLength="3"
+        android:textAppearance="@style/BorderEffect"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bText2" />
+
+    <TextView
+        android:id="@+id/distanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textAppearance="@style/BorderEffect"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bLetter2" />
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="onMainMenuClick"
+        android:text="@string/mainMenuButton"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nextColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="onNewColorClick"
+        android:text="@string/nextColorButton"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainMenuButton" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="322dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/happy_shocked_meme"
+        app:layout_constraintBottom_toTopOf="@+id/mainMenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distanceText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

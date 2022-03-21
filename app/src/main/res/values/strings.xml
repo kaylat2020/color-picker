@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Color Picker</string>
+    <string name="beginButton">Begin!</string>
+    <string name="currentResultsButton">Current Results</string>
+    <string name="mainMenuButton">Main Menu</string>
+    <string name="nextColorButton">New Color</string>
+    <string name="guessText">Enter your guess:</string>
+    <string name="guessText2">You Guessed:</string>
+    <string name="submitButton">Submit</string>
+    <string name="hint">Enter number from 0-255</string>
+    <string name="r">R</string>
+    <string name="g">G</string>
+    <string name="b">B</string>
+</resources>
